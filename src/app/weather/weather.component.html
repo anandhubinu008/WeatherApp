@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="upperData">
+        <span><input type="text" placeholder="Enter location" (input)="cityName($event)" ></span> <button (click)="btnClicked()">Search</button>
+        <h4>{{city}}</h4>
+        <h1>{{temprature}}° C</h1>
+        <h4>{{services}}</h4>
+    </div>
+    <div class="downData">
+        <div class="list-header">
+            <p>More Information</p>
+            <div class="list-container">
+                <div class="min-temp">
+                    <img src="../assets/max-temp.png" alt=""> <span>{{tempMax}} C</span>
+                    <p>Max Temp</p>
+                </div>
+                <div class="min-temp">
+                    <img src="../assets/min-temp.png" alt=""><span>{{tempMin}} C</span>
+                    <p>Min Temp</p>
+                </div>
+                <div class="min-temp">
+                    <img src="../assets/max-temp.png" alt=""><span>{{humidity}}</span>
+                    <p>Humidity</p>
+                </div>
+                <div class="min-temp">
+                    <img src="../assets/max-temp.png" alt=""><span>{{windSpeed}} km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
